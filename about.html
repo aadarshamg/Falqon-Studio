@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Are | Falqon Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🦅</div>
+            <div class="nav-logo-text">Falqon<br>Studio</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ai-automation.html">AI Automation</a></li>
+            <li><a href="about.html" style="color: #1c6b45;">Who We Are</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+917070818661" class="nav-phone">+91 70708 18661</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:14px;">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+                <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
+            </button>
+            <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
+        </div>
+    </nav>
+
+    <!-- ========================================================
+     HERO SHORT
+     ======================================================== -->
+    <div class="tile hero-tile-short">
+        <div class="hero-badge"><span class="dot"></span> ABOUT FALQON STUDIO</div>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Engineering the <span class="hero-highlight">Future</span>
+        </h1>
+        <p class="hero-sub" style="margin-bottom: 0; text-decoration: none;">We combine cutting-edge technology with
+            strategic thinking.</p>
+    </div>
+
+    <!-- ========================================================
+     ABOUT / TEAM TILE
+     ======================================================== -->
+    <div class="tile tile-white reveal">
+        <div class="inner" style="padding-top: 40px;">
+
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; margin-bottom: 64px;">
+                <h2 class="h2" style="font-size: 2.2rem;">Our Mission.</h2>
+                <p style="font-size: 1.1rem; color: var(--text-2); line-height: 1.8;">At Falqon Studio, our goal is to
+                    help businesses grow, automate, and innovate. From AI-powered automation to full-scale digital
+                    products, our expert team delivers solutions that are precise, scalable, and built for the modern
+                    world. We are not just a development shop; we are your strategic partner in digital transformation.
+                </p>
+            </div>
+
+            <div class="team-bento">
+                <!-- Intro Block (6/12 width) -->
+                <div class="tb-card tb-col-7"
+                    style="display: flex; flex-direction: column; justify-content: center; gap: 24px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; padding: 4px 12px; border-radius: 9999px; background: rgba(200, 241, 53, 0.1); border: 1px solid rgba(200, 241, 53, 0.2);">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 9999px; background: #c8f135; box-shadow: 0 0 8px #c8f135;"></span>
+                            <span
+                                style="font-size: 10px; font-weight: 700; letter-spacing: 0.1em; color: #c8f135; text-transform: uppercase;">Dedicated
+                                Team</span>
+                        </div>
+                    </div>
+                    <h2 class="h2"
+                        style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; margin-bottom: 0;">
+                        The <span style="color: #1a4331;" class="tb-primary-text">Expert Team</span> By Your Side
+                    </h2>
+                    <p style="color: var(--text-2); font-size: 1.125rem; max-width: 32rem; line-height: 1.6;">
+                        Our philosophy is simple — Give our clients access to the best current automation systems in
+                        each industry.
+                    </p>
+                </div>
+
+                <!-- Stats Block (5/12 width) -->
+                <div class="tb-col-5 tb-stats-grid">
+                    <div class="tb-stat-box">
+                        <span
+                            style="color: var(--text-2); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Automations</span>
+                        <div style="margin-top: 16px;">
+                            <p class="tb-stat-val">100+</p>
+                            <p class="tb-stat-inc">+24%</p>
+                        </div>
+                    </div>
+                    <div class="tb-stat-box">
+                        <span
+                            style="color: var(--text-2); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">Retention</span>
+                        <div style="margin-top: 16px;">
+                            <p class="tb-stat-val">98%</p>
+                            <p class="tb-stat-inc">+5%</p>
+                        </div>
+                    </div>
+                    <div class="tb-stat-wide">
+                        <div>
+                            <p style="color: var(--text); font-size: 1.125rem; font-weight: 700;">Expert Developers</p>
+                            <p style="color: var(--text-2); font-size: 0.875rem;">Growing 10% month-over-month</p>
+                        </div>
+                        <p style="font-size: 1.875rem; font-weight: 900;" class="tb-primary-text">15+</p>
+                    </div>
+                </div>
+
+                <!-- Team Member 1 (Myles) -->
+                <div class="tb-card tb-col-6-lg-4" style="padding: 16px;">
+                    <div class="tb-image-wrapper">
+                        <img alt="Portrait of Myles Robinson Founder and Strategist"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLL5WPqKZhGNWwh98uXL6xNNunXPUxzfVD4ueFwmhDX_BCfqRC_dE5zZFHrGUZL3ffL68Q3-XX2nDbbLSfL5Gu7v9gduv4JLKk3Ow2k2UY411wejur4VwTMYsHhYW7GZWPRzq2lC04XrdIXxMmdi8P66RqWZufHg-HU5pJqgotDXOF6DIKsGYWDrXkC9w5zYlWILcZaeR8bpi5INt6Ox1FNbDFkaTSehJZkrnPK4xPse93m6xt-75483gt_sGES5pWj9pgZS5Fhm36" />
+                    </div>
+                    <div style="padding: 0 8px 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text);">Myles Robinson
+                                </h3>
+                                <p style="font-size: 0.875rem; font-weight: 600;" class="tb-primary-text">Founder &
+                                    Strategist</p>
+                            </div>
+                            <div style="display: flex; gap: 12px; color: var(--text-2);">
+                                <a href="#" style="color: inherit; transition: color 0.3s;"
+                                    onmouseover="this.style.color='#c8f135'"
+                                    onmouseout="this.style.color='var(--text-2)'"><span
+                                        class="material-symbols-outlined"
+                                        style="font-size: 1.125rem; text-transform: none;">link</span></a>
+                                <a href="#" style="color: inherit; transition: color 0.3s;"
+                                    onmouseover="this.style.color='#c8f135'"
+                                    onmouseout="this.style.color='var(--text-2)'"><span
+                                        class="material-symbols-outlined"
+                                        style="font-size: 1.125rem; text-transform: none;">public</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 (Jamie) -->
+                <div class="tb-card tb-col-6-lg-4" style="padding: 16px;">
+                    <div class="tb-image-wrapper">
+                        <img alt="Portrait of Jamie Robinson Strategist"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuANJz5EkoE3rRGEPb_qoikk7bdjoKL3s8V4beESe9tmQYwBwMigSgBc2kJbRIohPLfy8pxn0I1_2N5oahM8H_J97zM2ADypxjrvE8CPcJ5kiD32le4XHLlICkd7WH0sDyCjqy02J5OmPxTR0szoC67mF3x6MCcgOs1pHhjEHsOUmEn_ocC-la8NuEp6h5lucvI5PHGMY4IOoJ231uszXrEQACjYTHuJI1h-8Tz1B-f24IPVIjhanxm0bwniNvm-jC0xB3lWV87C5q_5" />
+                    </div>
+                    <div style="padding: 0 8px 8px;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text);">Jamie Robinson
+                                </h3>
+                                <p style="font-size: 0.875rem; font-weight: 600;" class="tb-primary-text">Strategist</p>
+                            </div>
+                            <div style="display: flex; gap: 12px; color: var(--text-2);">
+                                <a href="#" style="color: inherit; transition: color 0.3s;"
+                                    onmouseover="this.style.color='#c8f135'"
+                                    onmouseout="this.style.color='var(--text-2)'"><span
+                                        class="material-symbols-outlined"
+                                        style="font-size: 1.125rem; text-transform: none;">link</span></a>
+                                <a href="#" style="color: inherit; transition: color 0.3s;"
+                                    onmouseover="this.style.color='#c8f135'"
+                                    onmouseout="this.style.color='var(--text-2)'"><span
+                                        class="material-symbols-outlined"
+                                        style="font-size: 1.125rem; text-transform: none;">public</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Join the Team / CTA Block -->
+                <div class="tb-card tb-col-12-lg-4 tb-cta-card" style="padding: 32px;">
+                    <div style="width: 64px; height: 64px; border-radius: 9999px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;"
+                        class="tb-icon-bg">
+                        <span class="material-symbols-outlined tb-primary-text"
+                            style="font-size: 2rem; text-transform: none;">group_add</span>
+                    </div>
+                    <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text);">Join Our Expert Team</h4>
+                    <p style="color: var(--text-2); font-size: 0.875rem; max-width: 240px;">We are always looking for
+                        automation experts to join Falqon Studio.</p>
+                    <button class="tb-btn-outline">
+                        View Open Roles
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     Values (Uses Pills repurposed)
+     ======================================================== -->
+    <div class="tile tile-light reveal">
+        <div class="uses-header">
+            <h2 class="h2">What drives us forward</h2>
+        </div>
+
+        <div class="uses-rows" style="padding-bottom: 56px;">
+            <div class="uses-row row1" style="animation-duration: 40s;">
+                <div class="uses-pill">Precision Engineering</div>
+                <div class="uses-pill">Strategic Thinking</div>
+                <div class="uses-pill">Relentless Innovation</div>
+                <div class="uses-pill">Scalable Architecture</div>
+                <div class="uses-pill">User-Centric Design</div>
+                <div class="uses-pill">Data-Driven Results</div>
+                <!-- duplicate -->
+                <div class="uses-pill">Precision Engineering</div>
+                <div class="uses-pill">Strategic Thinking</div>
+                <div class="uses-pill">Relentless Innovation</div>
+                <div class="uses-pill">Scalable Architecture</div>
+                <div class="uses-pill">User-Centric Design</div>
+                <div class="uses-pill">Data-Driven Results</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     FOOTER TILE
+     ======================================================== -->
+    <div class="footer-tile reveal" style="margin-top: 20px;">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="f-logo">
+                        <div class="f-logo-icon">🦅</div>
+                        <div class="f-logo-text">Falqon<br>Studio</div>
+                    </a>
+                    <p class="f-brand-desc">Engineering the Future. Your Ingredients. Our Recipe. We Cook. Custom
+                        digital products,
+                        branding, and comprehensive AI automation systems.</p>
+                </div>
+                <div class="f-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="ai-automation.html">AI Automation</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:connect@falqonstudio.com">connect@falqonstudio.com</a></li>
+                        <li><a href="tel:+917070818661">+91 70708 18661</a></li>
+                        <li><a href="#">www.falqonstudio.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Falqon Studio. All rights reserved.</p>
+                <div class="social-row">
+                    <a href="#" class="soc-icon">in</a>
+                    <a href="#" class="soc-icon">◎</a>
+                    <a href="#" class="soc-icon">▶</a>
+                    <a href="#" class="soc-icon">f</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</body>
+
+</html>

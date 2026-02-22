@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Falqon Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .form-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: .88rem;
+            color: var(--text-2);
+            font-weight: 600;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--input-bg);
+            color: var(--text);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color .3s, box-shadow .3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #1c6b45;
+            box-shadow: 0 0 0 3px rgba(28, 107, 69, .15);
+        }
+
+        textarea.form-input {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-info-card {
+            background: var(--card-2);
+            padding: 32px;
+            border-radius: 16px;
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+        .contact-info-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .contact-info-text {
+            color: var(--text-2);
+            font-size: .95rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-info-text a {
+            color: #1c6b45;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🦅</div>
+            <div class="nav-logo-text">Falqon<br>Studio</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ai-automation.html">AI Automation</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html" style="color: #1c6b45;">Contact Us</a></li>
+            <li><a href="tel:+917070818661" class="nav-phone">+91 70708 18661</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:14px;">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+                <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
+            </button>
+            <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
+        </div>
+    </nav>
+
+    <!-- ========================================================
+     HERO SHORT
+     ======================================================== -->
+    <div class="tile hero-tile-short">
+        <div class="hero-badge"><span class="dot"></span> GET IN TOUCH</div>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Let's <span class="hero-highlight">Connect</span>
+        </h1>
+        <p class="hero-sub" style="margin-bottom: 0; text-decoration: none;">Partner with Falqon Studio and bring your
+            vision to life.</p>
+    </div>
+
+    <!-- ========================================================
+     CONTACT FORM TILE
+     ======================================================== -->
+    <div class="tile tile-white reveal">
+        <div class="inner" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start;">
+
+            <!-- Left side: Contact Info -->
+            <div>
+                <h2 class="h2">Ready to Build Something Extraordinary?</h2>
+                <p class="sub" style="margin-bottom: 32px;">Whether you're looking to automate your processes, build a
+                    custom app, or redefine your brand, our team is ready to help.</p>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-title">Phone</div>
+                    <div class="contact-info-text">📞 <a href="tel:+917070818661">+91 70708 18661</a></div>
+                    <div style="font-size: .8rem; color: var(--text-4);">Mon-Fri, 9am - 6pm</div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-title">Email</div>
+                    <div class="contact-info-text">✉️ <a
+                            href="mailto:connect@falqonstudio.com">connect@falqonstudio.com</a></div>
+                    <div style="font-size: .8rem; color: var(--text-4);">We'll reply within 24 hours.</div>
+                </div>
+
+            </div>
+
+            <!-- Right side: Form -->
+            <div
+                style="background: var(--card); padding: 40px; border-radius: 20px; border: 1.5px solid var(--border-2); box-shadow: 0 10px 40px rgba(0,0,0,.03);">
+                <form
+                    onsubmit="event.preventDefault(); alert('Thanks for reaching out! We will be in touch soon.'); this.reset();">
+
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="john@company.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="service">Interested Service</label>
+                        <select id="service" class="form-input" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="ai">AI Automation</option>
+                            <option value="app">App Development</option>
+                            <option value="web">Website Development</option>
+                            <option value="design">Branding & Ideation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Project Details</label>
+                        <textarea id="message" class="form-input" placeholder="Tell us a little about your goals..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-green"
+                        style="width: 100%; justify-content: center; font-size: 1.05rem; padding: 16px;">Send
+                        Message</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========================================================
+     FOOTER TILE
+     ======================================================== -->
+    <div class="footer-tile reveal" style="margin-top: 20px;">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="f-logo">
+                        <div class="f-logo-icon">🦅</div>
+                        <div class="f-logo-text">Falqon<br>Studio</div>
+                    </a>
+                    <p class="f-brand-desc">Engineering the Future. Your Ingredients. Our Recipe. We Cook. Custom
+                        digital products,
+                        branding, and comprehensive AI automation systems.</p>
+                </div>
+                <div class="f-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="ai-automation.html">AI Automation</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html" style="color: #1c6b45;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:connect@falqonstudio.com">connect@falqonstudio.com</a></li>
+                        <li><a href="tel:+917070818661">+91 70708 18661</a></li>
+                        <li><a href="#">www.falqonstudio.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Falqon Studio. All rights reserved.</p>
+                <div class="social-row">
+                    <a href="#" class="soc-icon">in</a>
+                    <a href="#" class="soc-icon">◎</a>
+                    <a href="#" class="soc-icon">▶</a>
+                    <a href="#" class="soc-icon">f</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</body>
+
+</html>

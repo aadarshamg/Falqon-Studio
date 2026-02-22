@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falqon Studio – Engineering the Future. Your Ingredients. Our Recipe. We Cook.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🦅</div>
+            <div class="nav-logo-text">Falqon<br>Studio</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ai-automation.html">AI Automation</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+917070818661" class="nav-phone">+91 70708 18661</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:14px;">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+                <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
+            </button>
+            <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
+        </div>
+    </nav>
+
+    <!-- ========================================================
+     HERO TILE
+     ======================================================== -->
+    <div class="tile hero-tile">
+        <div class="hero-badge"><span class="dot"></span> ENGINEERING THE FUTURE</div>
+
+        <h1 class="hero-title">
+            Engineering the Future.<br>
+            <span class="hero-highlight" style="font-size: 0.65em; margin-top: 16px;">Your Ingredients. Our Recipe. We
+                Cook.</span>
+        </h1>
+        <div style="display: flex; gap: 16px; margin-bottom: 24px; position: relative; z-index: 1;">
+            <a href="services.html"><button class="hero-btn">Our Services →</button></a>
+            <a href="contact.html"><button class="btn-outline-dark">Book a Call</button></a>
+        </div>
+
+
+        <div class="hero-waves">
+            <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 160C180 80 360 200 540 130C720 60 900 190 1080 120C1240 60 1380 145 1440 122L1440 200L0 200Z"
+                    fill="rgba(14,70,38,.2)" />
+                <path
+                    d="M0 178C160 110 340 200 520 156C700 112 880 198 1060 156C1230 116 1380 175 1440 160L1440 200L0 200Z"
+                    fill="rgba(14,60,34,.38)" />
+                <path
+                    d="M0 194C120 162 280 200 440 178C620 155 800 200 980 176C1150 156 1340 196 1440 183L1440 200L0 200Z"
+                    fill="rgba(11,20,15,.78)" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     KEY CAPABILITIES (Bento Grid adapting original structure)
+     ======================================================== -->
+    <div class="tile tile-white reveal" id="about">
+        <div class="about-header">
+            <div class="label" style="margin-bottom:16px;"><span class="ldot"></span> CORE CAPABILITIES</div>
+            <h2 class="h2">Accelerate with <span class="lime-hl">Falqon Studio</span></h2>
+            <p class="sub center" style="margin:12px auto 0;">We build autonomous ecosystems and bespoke digital
+                platforms to supercharge operations across your entire business journey.</p>
+        </div>
+
+        <div class="home-bento">
+
+            <!-- 01 AI Automation -->
+            <div class="hb-card hb-dark hb-col-span-8 reveal"
+                style="display:flex; flex-direction:column; padding:0; min-height:500px;">
+                <div style="padding: 40px 40px 0;">
+                    <div style="display:flex; align-items:center; gap:8px; margin-bottom:24px;">
+                        <div
+                            style="width:40px; height:40px; border-radius:50%; background:rgba(200,241,53,0.1); display:flex; align-items:center; justify-content:center; color:#c8f135;">
+                            <span class="material-symbols-outlined">smart_toy</span>
+                        </div>
+                        <span
+                            style="color:#c8f135; font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">Featured
+                            Service</span>
+                    </div>
+                    <h3
+                        style="font-size:clamp(1.8rem, 4vw, 3rem); font-weight:700; color:white; margin-bottom:24px; line-height:1.1;">
+                        AI-Powered Autonomy</h3>
+                    <p style="color:#94a3b8; font-size:1.125rem; line-height:1.6; max-width:576px; margin-bottom:32px;">
+                        Harness the power of intelligence with custom-built autonomous agents and intelligent workflows
+                        that redefine productivity.</p>
+
+                    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:40px;">
+                        <span class="hb-tag hb-tag-dark">#Autonomous Agents</span>
+                        <span class="hb-tag hb-tag-dark">#CRM Automations</span>
+                        <span class="hb-tag hb-tag-dark">#Chatbots</span>
+                    </div>
+                </div>
+
+                <div class="ai-agent-mockup">
+                    <div class="ai-mockup-inner">
+                        <div style="padding:24px; border:1px solid rgba(255,255,255,0.05); border-radius:0.75rem;">
+                            <div style="display:flex; align-items:center; gap:8px; margin-bottom:24px;">
+                                <span
+                                    style="background:#7c5ebf; color:white; font-size:0.625rem; font-weight:700; padding:4px 8px; border-radius:4px;">AI
+                                    Agent</span>
+                                <h4 style="color:white; font-size:0.875rem; font-weight:700; margin:0;">Review
+                                    Operations Flow</h4>
+                            </div>
+                            <div
+                                style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.05); border-radius:0.5rem; padding:12px; margin-bottom:16px;">
+                                <p style="color:#94a3b8; font-size:0.75rem; font-style:italic; margin:0;">"Automate
+                                    client onboarding and cross-platform syncing"</p>
+                            </div>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                                <div class="ai-step-box"><span style="color:#64748b; margin-right:8px;">1.</span>
+                                    Capture client details securely</div>
+                                <div class="ai-step-box"><span style="color:#64748b; margin-right:8px;">2.</span>
+                                    Provision workspace instances</div>
+                                <div class="ai-step-box"><span style="color:#64748b; margin-right:8px;">3.</span>
+                                    Initiate welcome sequences</div>
+                                <div class="ai-step-box"><span style="color:#64748b; margin-right:8px;">4.</span> Alert
+                                    account executives</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03 Website Development (Pos 1) -->
+            <div class="hb-card hb-light hb-col-span-4 reveal"
+                style="display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <div style="margin-bottom: 24px;">
+                        <div
+                            style="width:48px; height:48px; border-radius:50%; background:rgba(0,0,0,0.05); display:flex; align-items:center; justify-content:center; color:#131613;">
+                            <span class="material-symbols-outlined" style="font-size:1.5rem;">language</span>
+                        </div>
+                    </div>
+                    <h3 style="font-size:1.875rem; font-weight:700; margin-bottom:24px; line-height:1.2;">Website
+                        Development</h3>
+                    <p style="opacity:0.75; line-height:1.6; margin-bottom:32px;">Stunning, conversion-focused websites
+                        ranging from custom Webflow builds to enterprise e-commerce solutions.</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                        <span class="hb-tag hb-tag-light">WEBFLOW</span>
+                        <span class="hb-tag hb-tag-light">E-COMMERCE</span>
+                    </div>
+                </div>
+                <a href="services.html" style="text-decoration:none;"><button class="hb-btn-primary"
+                        style="margin-top:32px;">View Services <span class="material-symbols-outlined"
+                            style="font-size:1rem;">arrow_forward</span></button></a>
+            </div>
+
+            <!-- 02 Holistic Digital Transformation (Pos 2) -->
+            <div class="hb-card hb-black hb-col-span-7 reveal"
+                style="display:flex; flex-direction:column; justify-content:center;">
+                <div style="max-width:28rem;">
+                    <div style="margin-bottom: 24px;">
+                        <div
+                            style="width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.05); display:flex; align-items:center; justify-content:center; color:white;">
+                            <span class="material-symbols-outlined" style="font-size:1.5rem;">terminal</span>
+                        </div>
+                    </div>
+                    <h3
+                        style="font-size:clamp(1.875rem, 3vw, 2.25rem); font-weight:700; color:white; margin-bottom:16px;">
+                        Holistic Digital Transformation</h3>
+                    <p style="color:#94a3b8; line-height:1.6; margin-bottom:32px;">From native iOS/Android development
+                        to
+                        sophisticated custom websites, we ensure your digital face isn't just visually stunning, but
+                        robust and performant.</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px;">
+                        <span class="hb-tag hb-tag-dark">APP DEVELOPMENT</span>
+                        <span class="hb-tag hb-tag-dark">UX/UI</span>
+                    </div>
+                    <a href="services.html" style="text-decoration:none;"><button class="hb-btn-outline">View
+                            Services</button></a>
+                </div>
+            </div>
+
+            <!-- 07 Data-Driven Marketing (Pos 3) -->
+            <div class="hb-card hb-light hb-col-span-5 reveal"
+                style="display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;">
+                <div style="margin-bottom: 24px;">
+                    <div
+                        style="width:56px; height:56px; border-radius:50%; background:rgba(0,0,0,0.05); display:flex; align-items:center; justify-content:center; color:#131613;">
+                        <span class="material-symbols-outlined" style="font-size:1.8rem;">trending_up</span>
+                    </div>
+                </div>
+                <h3 style="font-size:1.875rem; font-weight:700; margin-bottom:16px;">Data-Driven Marketing</h3>
+                <p style="opacity:0.75; line-height:1.6; max-width:20rem; margin:0 auto;">Expand your reach through
+                    analytics
+                    and precision-targeted campaigns. Every decision is built for measurable outcomes.</p>
+                <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:32px;">
+                    <span class="hb-tag hb-tag-light">SEO</span>
+                    <span class="hb-tag hb-tag-light">PPC</span>
+                    <span class="hb-tag hb-tag-light">ANALYTICS</span>
+                </div>
+            </div>
+
+            <!-- 04 Ideation to Execution (Pos 4) -->
+            <div class="hb-card hb-glass hb-col-span-4 reveal"
+                style="padding:32px; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <span
+                        style="color:#c8f135; font-size:0.625rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+                        <span class="material-symbols-outlined"
+                            style="font-size: 1.1rem; text-transform: none; letter-spacing: normal;">lightbulb</span>
+                        IDEATION
+                    </span>
+                    <h3 style="font-size:1.25rem; font-weight:700; color:white; margin-bottom:12px;">Ideation to
+                        Execution
+                    </h3>
+                    <p style="color:#94a3b8; font-size:0.875rem; line-height:1.6; margin:0;">Through rapid prototyping,
+                        we validate ideas before production begins.</p>
+                </div>
+            </div>
+
+            <!-- 05 Branding -->
+            <div class="hb-card hb-glass hb-col-span-4 reveal"
+                style="padding:32px; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <span
+                        style="color:#c8f135; font-size:0.625rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+                        <span class="material-symbols-outlined"
+                            style="font-size: 1.1rem; text-transform: none; letter-spacing: normal;">fingerprint</span>
+                        BRANDING &
+                        IDENTITY
+                    </span>
+                    <h3 style="font-size:1.25rem; font-weight:700; color:white; margin-bottom:12px;">Visual Narratives
+                    </h3>
+                    <p style="color:#94a3b8; font-size:0.875rem; line-height:1.6; margin:0;">Developing cohesive visual
+                        languages that tell your story.</p>
+                </div>
+            </div>
+
+            <!-- 06 Maintenance -->
+            <div class="hb-card hb-glass hb-col-span-4 reveal"
+                style="padding:32px; display:flex; flex-direction:column; justify-content:space-between;">
+                <div>
+                    <span
+                        style="color:#c8f135; font-size:0.625rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+                        <span class="material-symbols-outlined"
+                            style="font-size: 1.1rem; text-transform: none; letter-spacing: normal;">architecture</span>
+                        MAINTENANCE
+                    </span>
+                    <h3 style="font-size:1.25rem; font-weight:700; color:white; margin-bottom:12px;">System Reliability
+                    </h3>
+                    <p style="color:#94a3b8; font-size:0.875rem; line-height:1.6; margin:0;">Ensuring your systems
+                        remain secure, updated, and optimized.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========================================================
+     FOOTER TILE
+     ======================================================== -->
+    <div class="footer-tile reveal">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="f-logo">
+                        <div class="f-logo-icon">🦅</div>
+                        <div class="f-logo-text">Falqon<br>Studio</div>
+                    </a>
+                    <p class="f-brand-desc">Engineering the Future. Your Ingredients. Our Recipe. We Cook. Custom
+                        digital products,
+                        branding, and comprehensive AI automation systems.</p>
+                </div>
+                <div class="f-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="ai-automation.html">AI Automation</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:connect@falqonstudio.com">connect@falqonstudio.com</a></li>
+                        <li><a href="tel:+917070818661">+91 70708 18661</a></li>
+                        <li><a href="#">www.falqonstudio.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Falqon Studio. All rights reserved.</p>
+                <div class="social-row">
+                    <a href="#" class="soc-icon">in</a>
+                    <a href="#" class="soc-icon">◎</a>
+                    <a href="#" class="soc-icon">▶</a>
+                    <a href="#" class="soc-icon">f</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</body>
+
+</html>

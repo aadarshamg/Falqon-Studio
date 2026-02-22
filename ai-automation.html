@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation | Falqon Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🦅</div>
+            <div class="nav-logo-text">Falqon<br>Studio</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ai-automation.html" style="color: #1c6b45;">AI Automation</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+917070818661" class="nav-phone">+91 70708 18661</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:14px;">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+                <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
+            </button>
+            <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
+        </div>
+    </nav>
+
+    <!-- ========================================================
+     HERO SHORT
+     ======================================================== -->
+    <div class="tile hero-tile-short">
+        <div class="hero-badge"><span class="dot"></span> AI AUTOMATION</div>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Harness the power of <span class="hero-highlight">AI</span>
+        </h1>
+        <p class="hero-sub" style="margin-bottom: 0; text-decoration: none;">Eliminate repetitive tasks, reduce
+            friction, and unlock new performance levels.</p>
+    </div>
+
+    <!-- ========================================================
+     AI AUTOMATION SUB-SERVICES (Lime Cards Adaptation)
+     ======================================================== -->
+    <div class="tile tile-white reveal" id="features">
+        <div class="features-header">
+            <span class="label"><span class="ldot"></span> AUTOMATION SYSTEMS</span>
+            <h2 class="h2">Intelligent Automation</h2>
+            <p class="sub">We design and deploy intelligent automation systems tailored to your unique workflows, giving
+                your team the freedom to focus on what matters most.</p>
+        </div>
+
+        <div class="feat-grid" style="grid-template-columns: repeat(3, 1fr); padding-bottom: 16px;">
+
+            <!-- Service 1 -->
+            <div class="feat-card-lime">
+                <div class="feat-circle-icon">🤖</div>
+                <h3 style="margin-bottom: auto;">AI Agents</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">We
+                    build autonomous AI agents that think, decide, and act on your behalf to handle operations around
+                    the clock.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="feat-card-lime">
+                <div class="feat-circle-icon">⚡</div>
+                <h3 style="margin-bottom: auto;">CRM Automation</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Transform lead capture, scoring, and follow-ups with intelligent CRM pipelines that never miss an
+                    opportunity.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="feat-card-lime">
+                <div class="feat-circle-icon">💾</div>
+                <h3 style="margin-bottom: auto;">Financial Automation</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Streamline invoicing, reconciliation, and data pipelines to accelerate close cycles and give
+                    real-time visibility.</p>
+            </div>
+
+        </div>
+
+        <div class="feat-grid-row2" style="grid-template-columns: repeat(3, 1fr); padding-bottom: 60px;">
+
+            <!-- Service 4 -->
+            <div class="feat-card-lime">
+                <div class="feat-circle-icon">🧩</div>
+                <h3 style="margin-bottom: auto;">Workflow Automation</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Engineer seamless solutions connecting your tools, preventing bottlenecks, and ensuring information
+                    flows correctly.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="feat-card-lime">
+                <div class="feat-circle-icon">🎯</div>
+                <h3 style="margin-bottom: auto;">Marketing Automation</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Automate campaigns, email sequences, and lead nurturing to run data-driven marketing at scale.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="feat-card-lime">
+                <div class="feat-circle-icon">💬</div>
+                <h3 style="margin-bottom: auto;">Chatbots</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Deploy trained conversational AI to engage, qualify, and convert website/app visitors instantly.</p>
+            </div>
+
+        </div>
+
+        <div class="feat-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 800px; padding-top: 0;">
+            <!-- Service 7 -->
+            <div class="feat-card-lime" style="aspect-ratio: auto; padding-bottom: 22px;">
+                <div class="feat-circle-icon">⚙️</div>
+                <h3 style="margin-bottom: auto;">Business Process Automation</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Automate core business processes across departments to eliminate redundancy and enforce consistency.
+                </p>
+            </div>
+
+            <!-- Service 8 -->
+            <div class="feat-card-lime" style="aspect-ratio: auto; padding-bottom: 22px;">
+                <div class="feat-circle-icon">👥</div>
+                <h3 style="margin-bottom: auto;">HR Automation</h3>
+                <p style="font-size: .85rem; color: #0d2916; line-height: 1.5; margin-top: 12px; font-weight: 500;">
+                    Modernize HR by streamlining onboarding, payroll, leave management, and recruitment workflows.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     FAQ
+     ======================================================== -->
+    <div class="tile tile-white reveal">
+        <div class="inner" style="padding-top: 60px; padding-bottom: 60px;">
+
+            <div class="faq-header">
+                <span class="label"><span class="ldot"></span> FAQ</span>
+                <h2 class="h2">Frequently Asked Questions</h2>
+                <p class="sub">Real questions from our clients. Honest answers from our team.</p>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        What services does AI Automation provide?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>We partner with your business as an automation advisor. Our role is to identify where
+                            automation creates the most value, recommend the best AI solutions for your needs, and
+                            support your team or vendors during implementation. You maintain full ownership of the
+                            process while we ensure you're making smart, strategic decisions every step of the way.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        Do we need technical skills to use your services?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Absolutely not. We break down AI and automation concepts into simple, practical terms. Our
+                            guidance is designed to empower your entire team, regardless of their technical background,
+                            so they can confidently deploy and manage these solutions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        What type of companies do you typically work with?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>Our sweet spot is small to medium businesses and expanding mid-market companies across
+                            various industries. We're especially valuable for organizations wanting to improve their
+                            sales operations, enhance customer interactions, or eliminate time-draining manual tasks. If
+                            you're seeking a knowledgeable partner to help select and implement the right technology,
+                            we're the right fit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        Can you promise specific results like increased revenue?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>We believe in setting realistic expectations. While we can't guarantee specific outcomes, our
+                            strategies are based on proven success. Companies like Boiler Central and Value Doors have
+                            achieved substantial revenue growth using our approach. We prioritize measurable returns and
+                            constantly adjust your systems to maintain positive momentum.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        What business processes can you automate?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>The possibilities are extensive: lead capture and nurturing, customer communication, sales
+                            pipeline management, data processing, analytics reporting, appointment booking, and more.
+                            Generally, if a task is routine or administrative in nature, automation can handle it. This
+                            lets your people concentrate on high-value activities that require creativity and strategic
+                            thinking.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        Is automation going to eliminate jobs?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>That's not our goal or our approach. Automation performs best as a complement to human
+                            workers. By handling routine tasks, it allows your team to focus on meaningful work that
+                            drives growth and innovation. It's about enhancing capabilities, not reducing headcount.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        How do you assist with choosing automation tools and vendors?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>We apply a comprehensive evaluation process that considers features, user experience,
+                            integration options, growth potential, data security, and overall investment. You'll receive
+                            a curated list of solutions that truly match your business requirements, not just whatever's
+                            trending in the marketplace.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-trigger" onclick="this.closest('.faq-item').classList.toggle('open')">
+                        What's your consulting process?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-body">
+                        <p>We work in stages: beginning with an in-depth review of your operations, followed by
+                            customized technology recommendations and integration planning. After implementation, we
+                            monitor results and fine-tune your setup to ensure ongoing value as your business evolves.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     CTA
+     ======================================================== -->
+    <div class="tile tile-peach reveal" style="margin-top: 20px;">
+        <div class="cta-inner" style="grid-template-columns: 1fr; text-align: center;">
+            <div>
+                <h2>Ready to Build Something Extraordinary?</h2>
+                <p style="margin: 0 auto 28px; max-width: 600px;">Partner with Falqon Studio and bring your vision to
+                    life. Let's transform your operations with intelligent automation.</p>
+                <a href="contact.html"><button class="btn-green">Speak with an Expert →</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     FOOTER TILE
+     ======================================================== -->
+    <div class="footer-tile reveal" style="margin-top: 20px;">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="f-logo">
+                        <div class="f-logo-icon">🦅</div>
+                        <div class="f-logo-text">Falqon<br>Studio</div>
+                    </a>
+                    <p class="f-brand-desc">Engineering the Future. Your Ingredients. Our Recipe. We Cook. Custom
+                        digital products,
+                        branding, and comprehensive AI automation systems.</p>
+                </div>
+                <div class="f-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="ai-automation.html">AI Automation</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:connect@falqonstudio.com">connect@falqonstudio.com</a></li>
+                        <li><a href="tel:+917070818661">+91 70708 18661</a></li>
+                        <li><a href="#">www.falqonstudio.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Falqon Studio. All rights reserved.</p>
+                <div class="social-row">
+                    <a href="#" class="soc-icon">in</a>
+                    <a href="#" class="soc-icon">◎</a>
+                    <a href="#" class="soc-icon">▶</a>
+                    <a href="#" class="soc-icon">f</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Falqon Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========================================================
+     NAVBAR
+     ======================================================== -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🦅</div>
+            <div class="nav-logo-text">Falqon<br>Studio</div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="ai-automation.html">AI Automation</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="clients.html">Our Clients</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+917070818661" class="nav-phone">+91 70708 18661</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:14px;">
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+                <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
+            </button>
+            <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
+        </div>
+    </nav>
+
+    <!-- ========================================================
+     SERVICES HERO
+     ======================================================== -->
+    <div class="tile hero-tile-short">
+        <div class="hero-badge"><span class="dot"></span> SERVICES OVERVIEW</div>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.5rem);">
+            Engineering the <span class="hero-highlight">Future</span>
+        </h1>
+        <p class="hero-sub" style="margin-bottom: 0; text-decoration: none; padding: 0 20px;">Explore our comprehensive
+            digital solutions,
+            designed to scale your business through cutting-edge intelligence and engineering.</p>
+    </div>
+
+    <!-- ========================================================
+     SERVICES GRID
+     ======================================================== -->
+    <div class="tile tile-white reveal" id="services" style="padding-top: 16px;">
+        <div class="inner-md" style="padding-top: 0;">
+
+            <div class="service-bento-grid">
+
+                <!-- 01 AI Automation -->
+                <div class="service-card-glass feat-wide reveal">
+                    <div class="sc-watermark">01</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">smart_toy</span></div>
+                        <span class="sc-feat-tag">01 / FEATURED</span>
+                        <h3 class="sc-title">AI Automation</h3>
+                        <p class="sc-desc">Harness the power of intelligence with custom-built autonomous agents and
+                            intelligent workflows that redefine productivity.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">Autonomous Agents</span>
+                        <span class="sc-tag">CRM Automations</span>
+                        <span class="sc-tag">Chatbots</span>
+                    </div>
+                </div>
+
+                <!-- 02 App Development -->
+                <div class="service-card-glass reveal">
+                    <div class="sc-watermark">02</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">terminal</span></div>
+                        <h3 class="sc-title">App Development</h3>
+                        <p class="sc-desc">Scaleable, high-performance mobile and desktop applications built with modern
+                            architectural patterns.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">UX/UI Design</span>
+                        <span class="sc-tag">API Integration</span>
+                        <span class="sc-tag">Cross-Platform</span>
+                    </div>
+                </div>
+
+                <!-- 03 Website Development -->
+                <div class="service-card-glass reveal">
+                    <div class="sc-watermark">03</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">language</span></div>
+                        <h3 class="sc-title">Website Development</h3>
+                        <p class="sc-desc">Stunning, conversion-focused websites ranging from custom Webflow builds to
+                            enterprise e-commerce solutions.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">Custom Site</span>
+                        <span class="sc-tag">Webflow</span>
+                        <span class="sc-tag">E-Commerce</span>
+                    </div>
+                </div>
+
+                <!-- 04 Ideation -->
+                <div class="service-card-glass reveal">
+                    <div class="sc-watermark">04</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">lightbulb</span></div>
+                        <h3 class="sc-title">Ideation</h3>
+                        <p class="sc-desc">Bridging the gap between concept and creation through intensive research and
+                            strategic prototyping.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">Prototyping</span>
+                        <span class="sc-tag">User Research</span>
+                        <span class="sc-tag">Strategy</span>
+                    </div>
+                </div>
+
+                <!-- 05 Branding & Identity -->
+                <div class="service-card-glass reveal">
+                    <div class="sc-watermark">05</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">fingerprint</span></div>
+                        <h3 class="sc-title">Branding & Identity</h3>
+                        <p class="sc-desc">Developing cohesive visual languages that tell your story and leave a lasting
+                            impression on your audience.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">Visual Identity</span>
+                        <span class="sc-tag">Logos</span>
+                        <span class="sc-tag">Collateral</span>
+                    </div>
+                </div>
+
+                <!-- 06 Maintenance -->
+                <div class="service-card-glass reveal">
+                    <div class="sc-watermark">06</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">architecture</span></div>
+                        <h3 class="sc-title">Maintenance</h3>
+                        <p class="sc-desc">Ensuring your systems remain secure, updated, and optimized for maximum
+                            uptime and performance.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">Audits</span>
+                        <span class="sc-tag">Updates</span>
+                        <span class="sc-tag">Support</span>
+                    </div>
+                </div>
+
+                <!-- 07 Digital Marketing -->
+                <div class="service-card-glass reveal">
+                    <div class="sc-watermark">07</div>
+                    <div>
+                        <div class="sc-icon"><span class="material-symbols-outlined">trending_up</span></div>
+                        <h3 class="sc-title">Digital Marketing</h3>
+                        <p class="sc-desc">Data-driven growth strategies that increase visibility and drive meaningful
+                            conversions for your brand.</p>
+                    </div>
+                    <div class="sc-tags">
+                        <span class="sc-tag">SEO</span>
+                        <span class="sc-tag">PPC</span>
+                        <span class="sc-tag">Analytics</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ========================================================
+     CTA TILE
+     ======================================================== -->
+    <div class="tile tile-peach reveal" style="margin-top: 20px;">
+        <div class="cta-inner" style="grid-template-columns: 1fr; text-align: center;">
+            <div>
+                <h2>Ready to Build Something Extraordinary?</h2>
+                <p style="margin: 0 auto 28px; max-width: 600px;">Partner with Falqon Studio and bring your vision to
+                    life. Let's build something incredible together.</p>
+                <a href="contact.html"><button class="btn-green">Speak with an Expert →</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================
+     FOOTER TILE
+     ======================================================== -->
+    <div class="footer-tile reveal" style="margin-top: 20px;">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="index.html" class="f-logo">
+                        <div class="f-logo-icon">🦅</div>
+                        <div class="f-logo-text">Falqon<br>Studio</div>
+                    </a>
+                    <p class="f-brand-desc">Engineering the Future. Your Ingredients. Our Recipe. We Cook. Custom
+                        digital products,
+                        branding, and comprehensive AI automation systems.</p>
+                </div>
+                <div class="f-col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="ai-automation.html">AI Automation</a></li>
+                        <li><a href="services.html">App Development</a></li>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">Who We Are</a></li>
+                        <li><a href="clients.html">Our Clients</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="f-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="mailto:connect@falqonstudio.com">connect@falqonstudio.com</a></li>
+                        <li><a href="tel:+917070818661">+91 70708 18661</a></li>
+                        <li><a href="#">www.falqonstudio.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Falqon Studio. All rights reserved.</p>
+                <div class="social-row">
+                    <a href="#" class="soc-icon">in</a>
+                    <a href="#" class="soc-icon">◎</a>
+                    <a href="#" class="soc-icon">▶</a>
+                    <a href="#" class="soc-icon">f</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</body>
+
+</html>
