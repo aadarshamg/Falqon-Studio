@@ -214,6 +214,23 @@ nav {
     transition: color .35s;
 }
 
+/* — Logo Theme Swapping — */
+.logo-light {
+    display: block;
+}
+
+.logo-dark {
+    display: none;
+}
+
+[data-theme="dark"] .logo-light {
+    display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+    display: block;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
