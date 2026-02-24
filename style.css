@@ -1836,6 +1836,11 @@ nav {
         padding: 0 16px;
     }
 
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
     .nav-links {
         display: none;
     }
