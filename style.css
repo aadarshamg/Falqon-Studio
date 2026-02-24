@@ -2639,3 +2639,64 @@ nav {
         padding: 18px 4px;
     }
 }
+
+/* =============================================================
+   MOBILE MENU (HAMBURGER / SLIDER)
+   ============================================================= */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0;
+    margin-left: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-theme="dark"] .menu-toggle {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-cta {
+        display: none;
+        /* Hide standard CTA on mobile */
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        max-width: 300px;
+        background: var(--nav-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px;
+        gap: 24px;
+        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+        border-left: 1px solid var(--nav-border);
+        overflow-y: auto;
+    }
+
+    /* When menu is active */
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.25rem;
+        width: 100%;
+        display: block;
+    }
+}
