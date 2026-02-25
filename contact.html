@@ -21,7 +21,11 @@
     <meta property="twitter:image" content="https://www.falqonstudio.com/assets/falqon-logo.png">
     <link rel="canonical" href="https://www.falqonstudio.com/contact.html">
     <link rel="icon" href="./assets/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=block"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -124,7 +128,7 @@
                 <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
             </button>
             <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
-            <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -233,10 +237,12 @@
                         <img src="./assets/falqon-logo-white.png" alt="Falqon Studio Logo"
                             style="height: 40px; width: auto;" loading="lazy">
                     </a>
-                    <p class="f-brand-desc">We Build Brands With Substance. Your Ingredients. Our Recipe. We Cook.
+                    <p class="f-brand-desc">We Build Serious Brands. <span class="mobile-block">Your Ingredients.</span>
+                        <span class="mobile-block">Our Recipe.</span> <span class="mobile-block">We Cook.</span>
                         Custom
                         digital products,
-                        branding, and comprehensive AI automation systems.</p>
+                        branding, and comprehensive AI automation systems.
+                    </p>
                 </div>
                 <div class="f-col">
                     <h5>Services</h5>

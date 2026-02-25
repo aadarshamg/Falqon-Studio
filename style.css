@@ -1,3 +1,52 @@
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./assets/fonts/outfit-v11-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/outfit-v11-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/outfit-v11-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/outfit-v11-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/outfit-v11-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./assets/fonts/outfit-v11-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./assets/fonts/outfit-v11-latin-900.woff2') format('woff2');
+}
+
 /* =============================================================
    THEME VARIABLES
    ============================================================= */
@@ -2665,7 +2714,7 @@ nav {
     color: #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .menu-toggle {
         display: flex;
     }
@@ -2711,6 +2760,59 @@ nav {
     .nav-links a {
         font-size: 1.25rem;
         width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hb-card.hb-col-span-12 {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 24px !important;
+    }
+}
+
+/* =============================================================
+   CLIENTS BENTO GLASS WRAPPER
+   ============================================================= */
+.bento-glass-wrap {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-theme="light"] .bento-glass-wrap {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.bento-glass-wrap::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(200, 241, 53, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bento-glass-wrap>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile Footer Tagline Split */
+@media (max-width: 768px) {
+    .mobile-block {
         display: block;
     }
 }

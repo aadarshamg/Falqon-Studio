@@ -21,7 +21,13 @@
     <meta property="twitter:image" content="https://www.falqonstudio.com/assets/falqon-logo.png">
     <link rel="canonical" href="https://www.falqonstudio.com/clients.html">
     <link rel="icon" href="./assets/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=block"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -53,7 +59,7 @@
                 <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
             </button>
             <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
-            <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -81,35 +87,154 @@
     <div class="tile tile-white reveal">
         <div class="inner">
             <h2 class="h2">Don't just take our words for it!</h2>
-            <div class="testi-grid">
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testi-q">This team made AI simple and accessible for our business. They automated
-                        repetitive tasks and saved us hours every week. We finally have time to focus on growth instead
-                        of paperwork.</p>
-                    <div class="testi-who">E-Commerce Client</div>
+            <div class="home-bento" style="margin-top: 48px;">
+
+                <!-- 01 FOD Holidays -->
+                <div class="hb-card hb-dark hb-col-span-8 reveal" style="padding: 40px;">
+                    <span
+                        style="color:#c8f135; font-size:0.625rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+                        <span class="material-symbols-outlined"
+                            style="font-size: 1.1rem; text-transform: none; letter-spacing: normal;">flight_takeoff</span>
+                        TRAVEL & TOURISM
+                    </span>
+                    <h3 style="font-size:2rem; font-weight:700; color:white; margin-bottom:16px;">FOD Holidays</h3>
+                    <p style="color:#94a3b8; font-size:1.1rem; line-height:1.6; margin-bottom:32px;">A travel agency
+                        focused on curated domestic tour packages, group trips, and experiential travel planning.</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:32px;">
+                        <span class="hb-tag hb-tag-dark">Website Development</span>
+                        <span class="hb-tag hb-tag-dark">Marketing</span>
+                        <span class="hb-tag hb-tag-dark">SEO</span>
+                    </div>
+                    <a href="https://www.fodholidays.com/" target="_blank" rel="noopener noreferrer"
+                        style="text-decoration:none;"><button class="hb-btn-primary">Visit Website <span
+                                class="material-symbols-outlined"
+                                style="font-size:1rem;">arrow_outward</span></button></a>
                 </div>
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testi-q">We needed a bespoke app but didn't know where to start — Falqon Studio guided us
-                        every step. Their custom development boosted our sales team's efficiency and user engagement.
-                    </p>
-                    <div class="testi-who">Retail Startup</div>
+
+                <!-- 02 Pizza Virus -->
+                <div class="hb-card hb-light hb-col-span-4 reveal"
+                    style="padding: 40px; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div>
+                        <div style="margin-bottom: 24px;">
+                            <div
+                                style="width:48px; height:48px; border-radius:50%; background:rgba(0,0,0,0.05); display:flex; align-items:center; justify-content:center; color:#131613;">
+                                <span class="material-symbols-outlined" style="font-size:1.5rem;">local_pizza</span>
+                            </div>
+                        </div>
+                        <h3 style="font-size:1.75rem; font-weight:700; margin-bottom:16px;">Pizza Virus</h3>
+                        <p style="opacity:0.75; line-height:1.6; margin-bottom:24px;">A contemporary pizza brand
+                            offering bold flavors and online ordering convenience.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                            <span class="hb-tag hb-tag-light">App Development</span>
+                        </div>
+                    </div>
+                    <div style="margin-top:32px; display:inline-block; cursor:not-allowed;"
+                        title="App is in development">
+                        <button class="hb-btn-primary" style="pointer-events:none; opacity:0.75;">App is in development
+                            <span class="material-symbols-outlined"
+                                style="font-size:1rem;">hourglass_empty</span></button>
+                    </div>
                 </div>
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testi-q">I've seen plenty of "development agencies," but this team actually delivers
-                        results. They combine strategy with technology to solve real business problems. I recommend them
-                        to any serious founder.</p>
-                    <div class="testi-who">Fintech Client</div>
+
+                <!-- 03 RelicSphere -->
+                <div class="hb-card hb-black hb-col-span-4 reveal"
+                    style="padding: 40px; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div>
+                        <span
+                            style="color:#c8f135; font-size:0.625rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 1.1rem; text-transform: none; letter-spacing: normal;">language</span>
+                            DIGITAL SOLUTIONS
+                        </span>
+                        <h3 style="font-size:1.75rem; font-weight:700; color:white; margin-bottom:16px;">Relicsphere
+                        </h3>
+                        <p style="color:#94a3b8; line-height:1.6; margin-bottom:24px;">A digital destination for curated
+                            collectibles and cultural artifacts.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;">
+                            <span class="hb-tag hb-tag-dark">Website Development</span>
+                        </div>
+                    </div>
+                    <a href="https://relicsphere.com/" target="_blank" rel="noopener noreferrer"
+                        style="color:#c8f135; text-decoration:none; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:4px;">View
+                        Project <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span></a>
                 </div>
-                <div class="testi-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="testi-q">Our enterprise had complex, outdated workflows, and they transformed everything
-                        with smart automation and a new custom portal. Operations are now smooth, and reporting happens
-                        in real time.</p>
-                    <div class="testi-who">Healthcare SAAS</div>
+
+                <!-- 04 Ardent Digitech -->
+                <div class="hb-card hb-glass hb-col-span-4 reveal"
+                    style="padding: 40px; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div>
+                        <div style="margin-bottom: 24px;">
+                            <div
+                                style="width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.05); display:flex; align-items:center; justify-content:center; color:white;">
+                                <span class="material-symbols-outlined" style="font-size:1.5rem;">lightbulb</span>
+                            </div>
+                        </div>
+                        <h3 style="font-size:1.75rem; font-weight:700; color:white; margin-bottom:16px;">Ardent Digitech
+                        </h3>
+                        <p style="color:#94a3b8; line-height:1.6; margin-bottom:24px;">A corporate technology solutions
+                            provider specializing in custom software and IT services.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;">
+                            <span class="hb-tag hb-tag-dark">Website Development</span>
+                        </div>
+                    </div>
+                    <a href="https://www.ardentdigitechpvtltd.com/" target="_blank" rel="noopener noreferrer"
+                        style="color:white; text-decoration:none; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:4px;">View
+                        Project <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span></a>
                 </div>
+
+                <!-- 05 Evolutech System -->
+                <div class="hb-card hb-dark hb-col-span-4 reveal"
+                    style="padding: 40px; display:flex; flex-direction:column; justify-content:space-between;">
+                    <div>
+                        <span
+                            style="color:#c8f135; font-size:0.625rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:6px;">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 1.1rem; text-transform: none; letter-spacing: normal;">architecture</span>
+                            ENGINEERING
+                        </span>
+                        <h3 style="font-size:1.75rem; font-weight:700; color:white; margin-bottom:16px;">Evolutech
+                            Systems</h3>
+                        <p style="color:#94a3b8; line-height:1.6; margin-bottom:24px;">A technology enterprise
+                            delivering integrated hardware and software solutions.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;">
+                            <span class="hb-tag hb-tag-dark">Website Development</span>
+                        </div>
+                    </div>
+                    <a href="https://evolutechsystem.com/" target="_blank" rel="noopener noreferrer"
+                        style="color:#c8f135; text-decoration:none; font-weight:600; font-size:0.9rem; display:flex; align-items:center; gap:4px;">View
+                        Project <span class="material-symbols-outlined" style="font-size:1rem;">arrow_forward</span></a>
+                </div>
+
+                <!-- 06 Maaskom Logistics -->
+                <div class="hb-card hb-light hb-col-span-12 reveal"
+                    style="padding: 40px; display:flex; flex-direction:row; align-items:center; gap: 40px;">
+                    <div style="flex: 1;">
+                        <div style="margin-bottom: 24px;">
+                            <div
+                                style="width:56px; height:56px; border-radius:50%; background:rgba(0,0,0,0.05); display:flex; align-items:center; justify-content:center; color:#131613;">
+                                <span class="material-symbols-outlined" style="font-size:1.8rem;">local_shipping</span>
+                            </div>
+                        </div>
+                        <h3 style="font-size:2.25rem; font-weight:700; margin-bottom:16px;">Maaskom Logistics</h3>
+                        <p
+                            style="opacity:0.75; font-size:1.1rem; line-height:1.6; max-width:600px; margin-bottom:32px;">
+                            A logistics and supply chain services provider connecting transport and delivery expertise.
+                        </p>
+                    </div>
+                    <div>
+                        <div style="display:flex; flex-direction:column; gap:16px;">
+                            <div style="display:flex; gap:8px;">
+                                <span class="hb-tag hb-tag-light">Website Development</span>
+                                <span class="hb-tag hb-tag-light">Global CMS</span>
+                            </div>
+                            <a href="https://maaskomlogistics.com/" target="_blank" rel="noopener noreferrer"
+                                style="text-decoration:none;"><button class="hb-btn-primary">View Project <span
+                                        class="material-symbols-outlined"
+                                        style="font-size:1rem;">arrow_forward</span></button></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -128,10 +253,12 @@
                         <img src="./assets/falqon-logo-white.png" alt="Falqon Studio Logo"
                             style="height: 40px; width: auto;" loading="lazy">
                     </a>
-                    <p class="f-brand-desc">We Build Brands With Substance. Your Ingredients. Our Recipe. We Cook.
+                    <p class="f-brand-desc">We Build Serious Brands. <span class="mobile-block">Your Ingredients.</span>
+                        <span class="mobile-block">Our Recipe.</span> <span class="mobile-block">We Cook.</span>
                         Custom
                         digital products,
-                        branding, and comprehensive AI automation systems.</p>
+                        branding, and comprehensive AI automation systems.
+                    </p>
                 </div>
                 <div class="f-col">
                     <h5>Services</h5>

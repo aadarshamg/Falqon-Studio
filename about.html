@@ -21,7 +21,11 @@
     <meta property="twitter:image" content="https://www.falqonstudio.com/assets/falqon-logo.png">
     <link rel="canonical" href="https://www.falqonstudio.com/about.html">
     <link rel="icon" href="./assets/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=block"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet">
@@ -55,7 +59,7 @@
                 <span class="toggle-icons"><span>☀️</span><span>🌙</span></span>
             </button>
             <a href="contact.html"><button class="nav-cta">Connect With Us</button></a>
-            <button class="menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+            <button class="menu-toggle" aria-label="Toggle Menu">
                 <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none"
                     stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -71,7 +75,7 @@
      ======================================================== -->
     <div class="tile hero-tile-short">
         <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3.5rem);">
-            We Build <span class="hero-highlight">Brands With Substance</span>
+            We Build <span class="hero-highlight">Serious Brands</span>
         </h1>
         <p class="hero-sub" style="margin-bottom: 0; text-decoration: none;">We combine cutting-edge technology with
             strategic thinking.</p>
@@ -127,9 +131,7 @@
                 <!-- Team Member 2 (Jamie) -->
                 <div class="tb-card tb-col-6-lg-4" style="padding: 16px;">
                     <div class="tb-image-wrapper">
-                        <img alt="Portrait of Jamie Robinson Strategist"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuANJz5EkoE3rRGEPb_qoikk7bdjoKL3s8V4beESe9tmQYwBwMigSgBc2kJbRIohPLfy8pxn0I1_2N5oahM8H_J97zM2ADypxjrvE8CPcJ5kiD32le4XHLlICkd7WH0sDyCjqy02J5OmPxTR0szoC67mF3x6MCcgOs1pHhjEHsOUmEn_ocC-la8NuEp6h5lucvI5PHGMY4IOoJ231uszXrEQACjYTHuJI1h-8Tz1B-f24IPVIjhanxm0bwniNvm-jC0xB3lWV87C5q_5"
-                            loading="lazy" />
+                        <img alt="Portrait of Ansh Verma Strategist" src="./assets/Ansh_Verma.jpg" loading="lazy" />
                     </div>
                     <div style="padding: 0 8px 8px;">
                         <div style="display: flex; justify-content: space-between; align-items: flex-end;">
@@ -158,9 +160,7 @@
                 <!-- Team Member 3 (Alex) -->
                 <div class="tb-card tb-col-6-lg-4" style="padding: 16px;">
                     <div class="tb-image-wrapper">
-                        <img alt="Portrait of Alex Chen Lead Developer"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmR3zNqVivkJ0qCUWMPkVl82tHxNAb3oN7a-Fv3QFqLJhEMW-t_aVJCPMqJ24WVQbH8K5YoZFBEVkHKFBZBMVYAadWYYrlbEWLf0LhFvz_G1b33wfLs0HkW74oZgV3Vbg_X3fSABaHYCOWZHYVH0D7QdZKpvRCTBb6mcuFJ4AHv5TDfiqaWpVOkHWJuQ8NaKVJBXU4ej5ZKmkdBSrPJ5OO6A-1s-Q5mzKwxJiGRD2-lNqIe-Xtfot9m"
-                            loading="lazy" />
+                        <img alt="Portrait of Aman Kumar Lead Developer" src="./assets/Aman_Kumar.jpg" loading="lazy" />
                     </div>
                     <div style="padding: 0 8px 8px;">
                         <div style="display: flex; justify-content: space-between; align-items: flex-end;">
@@ -228,10 +228,12 @@
                         <img src="./assets/falqon-logo-white.png" alt="Falqon Studio Logo"
                             style="height: 40px; width: auto;">
                     </a>
-                    <p class="f-brand-desc">We Build Brands With Substance. Your Ingredients. Our Recipe. We Cook.
+                    <p class="f-brand-desc">We Build Serious Brands. <span class="mobile-block">Your Ingredients.</span>
+                        <span class="mobile-block">Our Recipe.</span> <span class="mobile-block">We Cook.</span>
                         Custom
                         digital products,
-                        branding, and comprehensive AI automation systems.</p>
+                        branding, and comprehensive AI automation systems.
+                    </p>
                 </div>
                 <div class="f-col">
                     <h5>Services</h5>

@@ -26,7 +26,7 @@ function toggleFaq(btn) {
 // Scroll reveal for tiles
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+        if (e.isIntersecting) { if (e.target) e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
     });
 }, { threshold: 0.07 });
 
@@ -40,7 +40,7 @@ const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach(e => {
         if (e.isIntersecting) {
             const cards = e.target.querySelectorAll('.feat-card-lime, .price-card, .testi-card, .blog-card, .brand-pill, .bento-peach, .bento-dark-green, .bento-dark, .bento-peach-r');
-            cards.forEach((c, i) => {
+            if (cards) cards.forEach((c, i) => {
                 c.style.opacity = '0';
                 c.style.transform = 'translateY(16px)';
                 c.style.transition = `opacity .45s ease ${i * 0.08}s, transform .45s ease ${i * 0.08}s`;
@@ -56,7 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Mobile Menu Toggle
-function toggleMobileMenu() {
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-}
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            navLinks.classList.toggle('active');
+        });
+    }
+});
