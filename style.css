@@ -671,11 +671,44 @@ nav {
     height: 200px;
     z-index: 1;
     pointer-events: none;
+    overflow: hidden;
 }
 
-.hero-waves svg {
-    width: 100%;
+.wave-track {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
     height: 100%;
+    display: flex;
+}
+
+.wave-track svg {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.wave-track-1 {
+    animation: flowWave 24s linear infinite;
+}
+
+.wave-track-2 {
+    animation: flowWave 16s linear infinite;
+}
+
+.wave-track-3 {
+    animation: flowWave 10s linear infinite;
+}
+
+@keyframes flowWave {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* =============================================================
