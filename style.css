@@ -623,7 +623,6 @@ nav {
     transition: background .2s, transform .15s;
     position: relative;
     z-index: 1;
-    margin-bottom: 12px;
 }
 
 .hero-btn:hover {
